@@ -1,0 +1,5 @@
+flask
+pymongo
+
+#http://containertutorials.com/docker-compose.html
+#http://containertutorials.com/docker-compose/flask-mongo-compose.html
