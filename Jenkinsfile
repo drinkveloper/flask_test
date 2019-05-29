@@ -1,8 +1,12 @@
-node{
+ pipeline {
 
-    stage 'Checkout'
-        checkout scm
-    stage 'Build and up'
-        sh "docker-compose up --build -d"
+    agent any
 
+    stages {
+      stage(‘Build’) {
+        steps {
+          sh '/usr/local/bin/docker-compose up --build'
+        }
+      }
+    }
 }
